@@ -89,9 +89,10 @@ function init_autoloader() {
  * @return void
  */
 function launch() {
+	init_constants();
+	init_hooks();
 	init_autoloader();
 }
 
-init_constants();
-init_hooks();
+
 launch();
